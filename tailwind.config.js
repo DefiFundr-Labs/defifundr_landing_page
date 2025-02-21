@@ -143,7 +143,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        openrunde: ["Hanken Grotesk", "sans-serif"], // Ensure fallback font
+        openrunde: ["Hanken Grotesk", "serif"], // Ensure fallback font
 
       },
       
