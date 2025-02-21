@@ -179,17 +179,17 @@ export default {
 
     // changed the line height
     fontSize: {
-      xs: ["0.75rem", { lineHeight: "1.05rem" }],
-      sm: ["0.875rem", { lineHeight: "1.225rem" }],
-      base: ["1rem", { lineHeight: "1.4rem" }],
-      lg: ["1.125rem", { lineHeight: "1.575rem" }],
-      xl: ["1.25rem", { lineHeight: "1.75rem" }],
-      "2xl": ["1.5rem", { lineHeight: "1.8rem" }],
-      "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
-      "4xl": ["2.25rem", { lineHeight: "2.7rem" }],
-      "5xl": ["3rem", { lineHeight: "3.6rem" }],
-      "6xl": ["3.75rem", { lineHeight: "4.5rem" }],
-      "7xl": ["4.5rem", { lineHeight: "1" }],
+      xs: ["0.75rem", { lineHeight: "1.125rem" }], 
+			sm: ["0.875rem", { lineHeight: "1.25rem" }], 
+			base: ["1rem", { lineHeight: "1.5rem" }], 
+			lg: ["1.125rem", { lineHeight: "1.75rem" }], 
+			xl: ["1.25rem", { lineHeight: "1.875rem" }], 
+			"2xl": ["1.5rem", { lineHeight: "2rem" }], 
+			"3xl": ["1.875rem", { lineHeight: "2.25rem" }], 
+			"4xl": ["2.25rem", { lineHeight: "2.75rem" }],
+			"5xl": ["3rem", { lineHeight: "1" }],
+			"6xl": ["3.75rem", { lineHeight: "4.75rem" }], 
+			"7xl": ["4.5rem", { lineHeight: "5rem" }],
     },
 
     // amend these values to suit the chosen font
