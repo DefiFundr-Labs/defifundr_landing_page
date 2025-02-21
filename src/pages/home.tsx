@@ -1,8 +1,11 @@
+import WhyChooseUs from '../components/WhyChooseUs';
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <WhyChooseUs />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
