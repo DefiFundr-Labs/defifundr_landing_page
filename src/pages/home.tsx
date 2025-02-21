@@ -1,7 +1,13 @@
+import PayrollSection from "./automated_payroll"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+     <div>Home</div>
+     <PayrollSection/>
+    </>
+   
+   
   )
 }
 
