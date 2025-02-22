@@ -1,7 +1,8 @@
+import SecurePayments from "../components/securePayments"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div><SecurePayments/></div>
   )
 }
 
