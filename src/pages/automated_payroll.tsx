@@ -1,13 +1,12 @@
 import React from 'react';
 import IconText from '../common/IconText';
 
-
 const PayrollSection: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between px-4 md:px-16 lg:px-32 py-12 bg-gray-100">
+    <div className="flex flex-col md:flex-row items-center justify-between px-gutter py-12 bg-gray-100">
       {/* Left Section */}
       <div className="flex-1 max-w-4xl mb-8 md:mb-0 md:pr-8">
-        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+        <h2 className="text-4xl md:text-6xl font-bold text-black leading-tight">
           Automated Payroll – Pay on time, every time.
         </h2>
         <p className="text-gray-600 mt-4 text-lg md:text-2xl leading-7 md:leading-9">
@@ -44,4 +43,3 @@ const PayrollSection: React.FC = () => {
 };
 
 export default PayrollSection;
-
