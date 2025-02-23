@@ -2,16 +2,142 @@ import { CreditCardIcon, SettingsIcon, WavyLines } from "./icons/payments";
 
 export const MultiPaymentOptions = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row w-11/12 mx-auto gap-[2rem] lg:gap-[5rem] items-center">
-      <div className="w-full h-full rounded-[1.5rem] lg:w-1/2 flex justify-center bg-[#DED0FB] flex flex-col pt-[0.5rem]">
-        <div className="">
+    <section className="flex flex-col-reverse lg:flex-row w-11/12 mx-auto gap-[2.5rem] lg:gap-[5rem] items-center pt-[3rem] pb-[3rem] lg:pt-[5rem] lg:pb-[5rem]">
+      <div className="w-full h-full rounded-[1.5rem] lg:w-1/2 flex justify-center bg-[#DED0FB] flex flex-col pt-[0.5rem] pb-[0.5rem] overflow-hidden">
+        <div className="relative w-full">
           <WavyLines />
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem]  rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-5 lg:bottom-0"
+          >
+            <img src="/img/usdt.svg" alt="usdt" className="scale-70" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-20"
+          >
+            <img src="/img/usd.svg" alt="usd" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-[10px] lg:bottom-[-10px] left-[35%]"
+          >
+            <img src="/img/eth.svg" alt="eth" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-8 left-[45%]"
+          >
+            <img src="/img/euro.svg" alt="euro" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-0 right-[25%]"
+          >
+            <img src="/img/busd.svg" alt="busd" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-0 right-0 lg:right-10"
+          >
+            <img src="/img/usdc.svg" alt="usdc" className="" />
+          </div>
         </div>
-        <div className="">
+        <div className="relative w-full">
           <WavyLines />
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem]  rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-5 lg:bottom-0"
+          >
+            <img src="/img/busd.svg" alt="busd" className="scale-70" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-20"
+          >
+            <img src="/img/usdt.svg" alt="usdt" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-[10px] lg:bottom-[-10px] left-[35%]"
+          >
+            <img src="/img/eth.svg" alt="eth" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-8 left-[45%]"
+          >
+            <img src="/img/usdt.svg" alt="usdt" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-0 right-[25%]"
+          >
+            <img src="/img/busd.svg" alt="busd" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-0 right-0 lg:right-10"
+          >
+            <img src="/img/usdc.svg" alt="usdc" className="" />
+          </div>
         </div>
-        <div className="">
+        <div className="relative w-full">
           <WavyLines />
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem]  rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-5 lg:bottom-0"
+          >
+            <img src="/img/usdt.svg" alt="usdt" className="scale-70" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-20"
+          >
+            <img src="/img/usd.svg" alt="usd" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-[10px] lg:bottom-[-10px] left-[35%]"
+          >
+            <img src="/img/eth.svg" alt="eth" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-8 left-[45%]"
+          >
+            <img src="/img/euro.svg" alt="euro" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-0 right-[25%]"
+          >
+            <img src="/img/busd.svg" alt="busd" className="" />
+          </div>
+          <div
+            className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
+    border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-0 right-0 lg:right-10"
+          >
+            <img src="/img/usdc.svg" alt="usdc" className="" />
+          </div>
         </div>
       </div>
       <div className="w-full lg:w-1/2">
