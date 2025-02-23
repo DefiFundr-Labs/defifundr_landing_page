@@ -1,9 +1,21 @@
+import { moodVariant, sectionVariant, textVariant } from "../animations/payments";
 import { CreditCardIcon, SettingsIcon, WavyLines } from "./icons/payments";
+import { motion } from "framer-motion";
 
 export const MultiPaymentOptions = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row w-11/12 mx-auto gap-[2.5rem] lg:gap-[5rem] items-center pt-[3rem] pb-[3rem] lg:pt-[5rem] lg:pb-[5rem]">
-      <div className="w-full h-full rounded-[1.5rem] lg:w-1/2 flex justify-center bg-[#DED0FB] flex flex-col pt-[0.5rem] pb-[0.5rem] overflow-hidden">
+    <motion.section className="flex flex-col-reverse lg:flex-row w-11/12 mx-auto gap-[2.5rem] lg:gap-[5rem] items-center pt-[3rem] pb-[3rem] lg:pt-[5rem] lg:pb-[5rem]"
+    variants={sectionVariant}
+    initial="initial"
+    whileInView="final"
+    viewport={{once: true}}
+    >
+      <motion.div className="w-full h-full rounded-[1.5rem] lg:w-1/2 flex justify-center bg-[#DED0FB] flex flex-col pt-[0.5rem] pb-[0.5rem] overflow-hidden"
+      variants={moodVariant}
+      initial="initial"
+      whileInView="final"
+      viewport={{once: true}}
+      >
         <div className="relative w-full">
           <WavyLines />
           <div
@@ -139,16 +151,31 @@ export const MultiPaymentOptions = () => {
             <img src="/img/usdc.svg" alt="usdc" className="" />
           </div>
         </div>
-      </div>
-      <div className="w-full lg:w-1/2">
-        <h2 className="font-bold text-2xl md:text-3xl lg:text-[40px] leading-tight lg:leading-[45.8px] tracking-[-4%] text-left">
+      </motion.div>
+      <motion.div className="w-full lg:w-1/2"
+      variants={moodVariant}
+      initial="initial"
+      whileInView="final"
+      viewport={{once: true}}
+      >
+        <motion.h2 className="font-bold text-2xl md:text-3xl lg:text-[40px] leading-tight lg:leading-[45.8px] tracking-[-4%] text-left"
+        initial="initial"
+        whileInView="final"
+        variants={textVariant}
+        viewport={{ once: true }}
+        >
           Pay employees in crypto, <br className="hidden lg:block" />{" "}
           stablecoins, or traditional fiat.
-        </h2>
-        <p className="mt-5 text-gray-700 text-sm md:text-md text-left">
+        </motion.h2>
+        <motion.p className="mt-5 text-gray-700 text-sm md:text-md text-left"
+        initial="initial"
+        whileInView="final2"
+        variants={textVariant}
+        viewport={{ once: true }}
+        >
           Give employees the freedom to choose their preferred payment method.
           Pay salaries in USDC, SOL, ETH, fiat, or a mix of both—seamlessly.
-        </p>
+        </motion.p>
         <div className="flex flex-col md:flex-row w-full mt-10 gap-5 items-start">
           <div className="items-start w-full md:w-1/2 p-2">
             <div className="pl-[0.5rem] lg:pl-[0rem]">
@@ -175,7 +202,7 @@ export const MultiPaymentOptions = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
