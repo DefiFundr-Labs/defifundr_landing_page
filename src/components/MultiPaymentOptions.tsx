@@ -50,46 +50,46 @@ export const MultiPaymentOptions = () => {
           </div>
         </div>
         <div className="relative w-full">
-          <WavyLines />
+          <WavyLines classStyles="translate-x-6" />
           <div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem]  rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-5 lg:bottom-0"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-6 bottom-5 lg:bottom-0"
           >
             <img src="/img/busd.svg" alt="busd" className="scale-70" />
           </div>
           <div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-20"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-6 bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-20"
           >
             <img src="/img/usdt.svg" alt="usdt" className="" />
           </div>
           <div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-[10px] lg:bottom-[-10px] left-[35%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-6 bottom-[10px] lg:bottom-[-10px] left-[35%]"
           >
             <img src="/img/eth.svg" alt="eth" className="" />
           </div>
           <div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-8 left-[45%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-6 top-8 left-[45%]"
           >
             <img src="/img/usdt.svg" alt="usdt" className="" />
           </div>
           <div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 top-0 right-[25%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-6 top-0 right-[25%]"
           >
             <img src="/img/busd.svg" alt="busd" className="" />
           </div>
           <div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-8 bottom-0 right-0 lg:right-10"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute translate-x-6 bottom-0 right-0 lg:right-10"
           >
             <img src="/img/usdc.svg" alt="usdc" className="" />
           </div>
