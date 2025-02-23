@@ -39,7 +39,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-28"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer bottom-15 lg:bottom-0 lg:top-8 left-15 lg:left-28"
             variants={oscillateVariant}
             animate="animate"
             whileHover="hover"
@@ -59,7 +59,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-8 left-[50%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-8 left-[54%] lg:left-[50%]"
             variants={rotateVariant}
             animate="animate"
             whileHover="hover"
@@ -69,7 +69,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer  top-0 right-[18%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer  top-0 right-[15%] lg:right-[18%]"
             variants={oscillateVariant}
             animate="animate"
             whileHover="hover"
@@ -132,7 +132,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-0 right-[18%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-0 right-[15%] lg:right-[18%]"
             variants={oscillateVariant}
             animate="animate"
             whileHover="hover"
@@ -165,7 +165,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer bottom-10 lg:bottom-0 lg:top-8 left-15 lg:left-28"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer bottom-15 lg:bottom-0 lg:top-8 left-15 lg:left-28"
             variants={oscillateVariant}
             animate="animate"
             whileHover="hover"
@@ -185,7 +185,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-8 left-[50%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-8 left-[54%] lg:left-[50%]"
             variants={rotateVariant}
             animate="animate"
             whileHover="hover"
@@ -195,7 +195,7 @@ export const MultiPaymentOptions = () => {
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
     border-[0.06rem] border-white/50 border-t-[#C0A9F0] 
-    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-0 right-[18%]"
+    bg-white backdrop-blur-md p-1 gap-[0.4rem] flex justify-center items-center absolute cursor-pointer top-0 right-[15%] lg:right-[18%]"
             variants={oscillateVariant}
             animate="animate"
             whileHover="hover"

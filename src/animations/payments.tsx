@@ -69,7 +69,7 @@ export const oscillateVariant = {
     x: [2, -2, 2, -2, 2],
     y: [2, -2, 2, -2, 2],
     transition: {
-      duration: 2,
+      duration: 6,
       repeat: Infinity,
       ease: "easeInOut",
     },
@@ -85,7 +85,7 @@ export const rotateVariant = {
   animate: {
     rotate: [0, 360],
     transition: {
-      duration: 4,
+      duration: 6,
       repeat: Infinity,
       ease: "linear",
     },
