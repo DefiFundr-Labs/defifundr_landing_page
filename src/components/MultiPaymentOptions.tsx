@@ -1,7 +1,7 @@
 export const MultiPaymentOptions = () => {
   return (
     <section>
-      <h1>Working on this section</h1>
+      <h2>Working on this section</h2>
     </section>
   );
 };
