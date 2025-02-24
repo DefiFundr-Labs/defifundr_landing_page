@@ -1,8 +1,11 @@
+import FAQSection from "../components/FAQSection";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <FAQSection />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

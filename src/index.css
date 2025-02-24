@@ -21,8 +21,9 @@ body {
 	}
 
 	.h2 {
-		@apply text-2xl font-black sm:text-3xl md:text-5xl;
-	}
+    @apply text-2xl  sm:text-3xl md:text-5xl;
+}
+
 	.h3 {
 		@apply text-xl sm:text-3xl font-semibold tracking-[-2%];
 	}
