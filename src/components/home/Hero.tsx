@@ -1,4 +1,4 @@
-// import hero_section_bg from "../../assets/images/Hero-section-bg.png";
+import hero_section_bg from "../../assets/images/Hero-section-bg.png";
 function Hero() {
   return (
     <section className="bg-gradient-to-tr from-[#FEF8F2] via-[#ffffff] to-[#EBFBFF]">
