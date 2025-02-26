@@ -1,10 +1,10 @@
 import hero_section_bg from "../../assets/images/Hero-section-bg.png";
 function Hero() {
   return (
-    <section className="bg-gradient-to-tr from-[#FEF8F2] via-[#ffffff] to-[#EBFBFF]">
+    <section className="bg-gradient-to-tr  from-[#FEF8F2] via-[#ffffff] to-[#EBFBFF]">
       <div
         style={{ backgroundImage: `url(${hero_section_bg})` }}
-        className="container flex flex-col items-center justify-center h-3/4 py-24  md:py-[13.2rem] space-y-10  bg-cover bg-[20%_0%] sm:bg-center bg-no-repeat"
+        className="container flex flex-col items-center justify-center h-[calc(100vh-80px)] py-24  md:py-[13.2rem] space-y-10  bg-cover bg-[20%_0%] sm:bg-center bg-no-repeat"
       >
         <div className="flex flex-col items-center justify-center gap-6">
           <h1 className="text-4xl sm:text-4xl md:text-6xl leading-[42px] font-bold  tracking-[-4%] md:leading-[64px] text-[#1A1A1A] max-w-[17ch] text-center">

@@ -2,7 +2,7 @@ import DefiFundr_Logo from "../assets/DefiFundr_Logo.svg";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#F2F2F3] h-[80px] flex justify-between items-center">
+    <div className="bg-[#F2F2F3] container h-[80px] flex justify-between items-center">
       <div className="flex items-center gap-[9px] ml-[16px] sm:ml-[120px]">
         <img
           src={DefiFundr_Logo}
