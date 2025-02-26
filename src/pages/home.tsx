@@ -1,14 +1,14 @@
+
+import Hero from "../components/home/Hero";
 import PayrollSection from "./automated_payroll"
 
 const Home = () => {
   return (
-    <>
-     <div>Home</div>
-     <PayrollSection/>
-    </>
-   
-   
-  )
-}
+    <main>
+      <Hero />
+      <PayrollSection/>
+    </main>
+  );
+};
 
-export default Home
+export default Home;
