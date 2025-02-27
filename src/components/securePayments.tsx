@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react";
-import { Slide } from "react-awesome-reveal";
+// import { Slide } from "react-awesome-reveal";
 import { GoVerified } from "react-icons/go";
 import { inViewSensor } from "tailwind-inview";
 
