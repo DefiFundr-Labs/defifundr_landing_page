@@ -9,7 +9,7 @@ const PayrollSection: React.FC = () => {
         <h2 className="text-4xl font-bold leading-tight text-black md:text-5xl">
           Automated Payroll – Pay on time, every time.
         </h2>
-        <p className="mt-4 text-lg leading-7 text-gray-600 md:text-2xl md:leading-9">
+        <p className="mt-4 text-lg text-[#2D2F31] ">
           Eliminate manual payroll calculations and delays. Our platform
           automates salary disbursements based on predefined schedules, ensuring
           employees get paid accurately and on time—every time.
@@ -35,7 +35,7 @@ const PayrollSection: React.FC = () => {
         <img
           src="payment_overview.svg"
           alt="Payment Overview"
-          className="w-full h-auto md:w-1/2 lg:w-auto"
+          className="w-full h-auto aspect-square"
         />
       </div>
     </div>

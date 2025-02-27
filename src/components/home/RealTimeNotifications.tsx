@@ -1,6 +1,6 @@
 function RealTimeNotifications() {
   return (
-    <div className="p-6 py-[60px] lg:p-[120px] flex flex-col lg:flex-row justify-between items-center gap-y-[48px]">
+    <div className="container py-[60px] flex flex-col lg:flex-row justify-between items-center gap-y-[48px]">
       <div>
         <div className="lg:max-w-[589px] mb-6 lg:mb-8">
           <h3 className="mb-3 lg:mb-4 font-bold text-black text-[35px] leading-[42px] lg:text-[44px] lg:leading-[53px]">
@@ -41,7 +41,7 @@ function RealTimeNotifications() {
       </div>
       <img
         src="/NotificationsBanner.svg"
-        className="w-full lg:w-auto lg:h-[480px]"
+        className="object-contain aspect-square"
         alt=""
       />
     </div>
