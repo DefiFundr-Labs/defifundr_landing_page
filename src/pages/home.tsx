@@ -1,4 +1,3 @@
-export default Home;
 import { MultiPaymentOptions } from "../components/MultiPaymentOptions";
 import SecurePayments from "../components/securePayments";
 import Hero from "../components/home/Hero";
