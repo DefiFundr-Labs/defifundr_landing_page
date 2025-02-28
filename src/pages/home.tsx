@@ -1,3 +1,4 @@
+import Cta from "../components/home/Cta";
 
 
 import { MultiPaymentOptions } from "../components/MultiPaymentOptions";
@@ -15,6 +16,7 @@ const Home = () => {
       <SecurePayments />
       <RealTimeNotifications />
       <MultiPaymentOptions />
+      <Cta />
       <FAQSection />
     </main>
 
