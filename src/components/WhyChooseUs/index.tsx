@@ -23,7 +23,7 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="max-w-7xl mx-auto px-12 py-[7rem]">
       <div className="text-center mb-16">
         <h2 className="text-sm uppercase tracking-wider text-[#373737]">WHY CHOOSE US</h2>
         <h1 className="text-[23px] font-bold mt-4 xs:text-[40px]">
