@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,12 +40,15 @@
 body {
   font-family: "Hanken Grotesk", serif;
 }
+
 @layer base {
   body {
     @apply text-black font-openrunde;
   }
 }
-/* @layer utilities {
+
+
+@layer utilities {
 	.h1 {
 		@apply text-3xl font-bold sm:text-5xl;
 	}
@@ -52,9 +56,11 @@ body {
 	.h2 {
 		@apply text-2xl font-bold sm:text-3xl md:text-5xl;
 	}
+
 	.h3 {
 		@apply text-xl sm:text-3xl font-semibold tracking-[-2%];
 	}
+
 	.h4 {
 		@apply text-xl sm:text-xl font-semibold tracking-[-2%];
 	}
@@ -95,17 +101,21 @@ body {
 	.tag {
 		@apply flex w-fit rounded-full  py-2 px-3.5  gap-2 border font-medium text-sm;
 	}
+
 	.tag-primary {
 		@apply border-purple-100 tag bg-primary-100 text-primary-600;
 	}
+
 	.tag-secondary {
 		@apply text-purple-600 bg-purple-100 border-purple-300 tag;
 	}
+
 	.tag-tertiary {
 		@apply text-purple-500 tag bg-purple-50 border-purple-50;
 	}
+
 	.tag-tertiary-white {
 		@apply text-purple-500 bg-white border-white tag;
 	}
-} */
 
+}

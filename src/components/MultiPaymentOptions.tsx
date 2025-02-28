@@ -18,7 +18,7 @@ export const MultiPaymentOptions = () => {
       viewport={{ once: true }}
     >
       <motion.div
-        className="w-full h-full rounded-[1.5rem] lg:w-1/2 flex justify-center bg-[#DED0FB] flex flex-col pt-[0.5rem] pb-[0.5rem] overflow-hidden"
+        className="w-full h-full rounded-[1.5rem] lg:w-1/2 flex-justify-center bg-[#DED0FB] flex flex-col pt-[0.5rem] pb-[0.5rem] overflow-hidden"
         variants={moodVariant}
         initial="initial"
         whileInView="final"
