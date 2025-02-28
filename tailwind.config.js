@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+import inviewPlugin from "tailwind-inview";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -238,7 +239,32 @@ export default {
         114: "28.5rem",
         125: "31.25rem",
       },
+      keyframes: {
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
+        slidein300: "slidein 1s ease 300ms forwards",
+        slidein500: "slidein 1s ease 500ms forwards",
+        slidein700: "slidein 1s ease 700ms forwards",
+        slidein1000: "slidein 1s ease 1000ms forwards",
+        slidein1200: "slidein 1s ease 1200ms forwards",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+    inviewPlugin,
+    require("tailwindcss-animated"),
+  ],
+  
 };
