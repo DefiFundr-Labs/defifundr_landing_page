@@ -1,31 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* this is for an animation dont remove it  */
+.circle-grandient {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  /* filter: drop-shadow(9px); */
+  filter: blur(21.3px);
+  background: linear-gradient(45deg, transparent 0%, #b42e0d 100%);
+  opacity: 0.43;
+  animation: gradientAnimation 50s ease-in-out infinite;
+}
+/* this is for an animation dont remove it  */
 
+@keyframes gradientAnimation {
+  0% {
+    transform: translate(80vw, -20%); /* Top-right */
+  }
+  25% {
+    transform: translate(80vw, 100%); /* Bottom-right */
+  }
+  50% {
+    transform: translate(-90%, 100%); /* Bottom-left */
+  }
+  75% {
+    transform: translate(-10%, -70%); /* Top-left */
+  }
+  100% {
+    transform: translate(80vw, -70%); /* Back to Top-right */
+  }
+}
 .container {
-	@apply mx-auto px-gutter !max-w-none 4xl:px-contained;
+  @apply mx-auto px-gutter !max-w-none 4xl:px-contained;
 }
 
 body {
-	font-family: "Hanken Grotesk", serif;
+  font-family: "Hanken Grotesk", serif;
 }
+
 @layer base {
-	body {
-		@apply text-black font-openrunde;
-	}
+  body {
+    @apply text-black font-openrunde;
+  }
 }
+
+
 @layer utilities {
 	.h1 {
 		@apply text-3xl font-bold sm:text-5xl;
 	}
 
 	.h2 {
-		@apply text-2xl font-black sm:text-3xl md:text-5xl;
+		@apply text-2xl font-bold sm:text-3xl md:text-5xl;
 	}
+
 	.h3 {
 		@apply text-xl sm:text-3xl font-semibold tracking-[-2%];
 	}
+
 	.h4 {
 		@apply text-xl sm:text-xl font-semibold tracking-[-2%];
 	}
@@ -35,9 +70,7 @@ body {
 	}
 
 	.button--primary {
-		@apply text-white bg-primary-500 border border-primary-500 
-               hover:bg-primary-600 hover:border-primary-600 
-               focus:bg-primary-500 focus:border-primary-500;
+		@apply text-white border bg-primary-500 border-primary-500 hover:bg-primary-600 hover:border-primary-600 focus:bg-primary-500 focus:border-primary-500;
 	}
 
 	.button--secondary {
@@ -52,8 +85,7 @@ body {
 	}
 
 	.button--tertiary-gray {
-		@apply text-gray-600 bg-gray-100 border border-gray-200
-               hover:bg-gray-200 focus:bg-gray-100;
+		@apply text-gray-600 bg-gray-100 border border-gray-200 hover:bg-gray-200 focus:bg-gray-100;
 	}
 
 	.button--tertiary-white {
@@ -69,16 +101,21 @@ body {
 	.tag {
 		@apply flex w-fit rounded-full  py-2 px-3.5  gap-2 border font-medium text-sm;
 	}
+
 	.tag-primary {
-		@apply tag border-purple-100 bg-primary-100 text-primary-600;
+		@apply border-purple-100 tag bg-primary-100 text-primary-600;
 	}
+
 	.tag-secondary {
-		@apply tag text-purple-600 bg-purple-100 border-purple-300;
+		@apply text-purple-600 bg-purple-100 border-purple-300 tag;
 	}
+
 	.tag-tertiary {
-		@apply tag text-purple-500 bg-purple-50 border-purple-50;
+		@apply text-purple-500 tag bg-purple-50 border-purple-50;
 	}
+
 	.tag-tertiary-white {
-		@apply tag text-purple-500 bg-white border-white;
+		@apply text-purple-500 bg-white border-white tag;
 	}
+
 }
