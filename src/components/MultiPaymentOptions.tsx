@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 export const MultiPaymentOptions = () => {
   return (
     <motion.section
-      className="flex flex-col-reverse lg:flex-row w-11/12 mx-auto gap-[2.5rem] lg:gap-[5rem] items-center pt-[3rem] pb-[3rem] lg:pt-[5rem] lg:pb-[5rem]"
+      className="flex flex-col-reverse lg:flex-row container   gap-[2.5rem] lg:gap-[5rem] items-center pt-[3rem] pb-[3rem] lg:pt-[5rem] lg:pb-[5rem]"
       variants={sectionVariant}
       initial="initial"
       whileInView="final"
@@ -241,25 +241,25 @@ export const MultiPaymentOptions = () => {
           Give employees the freedom to choose their preferred payment method.
           Pay salaries in USDC, SOL, ETH, fiat, or a mix of both—seamlessly.
         </motion.p>
-        <div className="flex flex-col md:flex-row w-full mt-10 gap-5 items-start">
-          <div className="items-start w-full md:w-1/2 p-2">
+        <div className="flex flex-col items-start w-full gap-5 mt-10 md:flex-row">
+          <div className="items-start w-full p-2 md:w-1/2">
             <div className="pl-[0.5rem] lg:pl-[0rem]">
               <CreditCardIcon />
             </div>
             <div className="mt-5">
-              <h2 className="text-lg  font-bold">Multi-Currency Support</h2>
+              <h2 className="text-lg font-bold">Multi-Currency Support</h2>
               <p className="text-[#2D2F31] text-xs md:text-sm">
                 Pay employees in cryptocurrencies like USDC, SOL, ETH, or
                 traditional fiat, all within the same platform.
               </p>
             </div>
           </div>
-          <div className="items-start w-full md:w-1/2 p-2">
+          <div className="items-start w-full p-2 md:w-1/2">
             <div className="pl-[0.5rem] lg:pl-[0rem]">
               <SettingsIcon />
             </div>
             <div className="mt-5">
-              <h2 className="text-lg  font-bold">Customizable Payouts</h2>
+              <h2 className="text-lg font-bold">Customizable Payouts</h2>
               <p className="text-xs md:text-sm text-[#2D2F31]">
                 Split salaries between crypto and fiat, allowing employees to
                 receive payments in their preferred combination.

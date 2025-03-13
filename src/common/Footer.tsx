@@ -1,40 +1,40 @@
-import Link from "next/link"
-import Image from "next/image"
+
 import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white px-6 py-8 md:px-6 lg:px-16">
-        <div className=" flex flex-col">
-          <div className="flex items-center justify-between max-md:flex-col mb-10 mt-5">
-            <Link href="" className="flex items-center space-x-2">
-              <Image
+    <footer className="w-full px-6 py-8 bg-white md:px-6 lg:px-16">
+        <div className="flex flex-col ">
+          <div className="flex items-center justify-between mt-5 mb-10 max-md:flex-col">
+            <Link to="" className="flex items-center space-x-2">
+              <img
                 src="/Logo.png"
                 width={200}
                 height={200}
                 alt="DefiFundr Logo"
-                className="h-full w-full"
+                className="w-full h-full"
               />
             </Link>
             <nav>
               <ul className="flex  items-center  text-sm space-x-5 max-md:flex-col max-md:space-x-0 max-md:space-y-5 max-md:mt-7 text-[#000000] ">
                 <li>
-                  <Link href="/features" className="font-medium text-base">
+                  <Link to="/features" className="text-base font-medium">
                     Features
                   </Link>
                 </li>
                 <li>
-                  <Link href="/our-story" className="font-medium text-base ">
+                  <Link to="/our-story" className="text-base font-medium ">
                     Our Story
                   </Link>
                 </li>
                 <li>
-                  <Link href="/testimonials" className="font-medium text-base ">
+                  <Link to="/testimonials" className="text-base font-medium ">
                     Testimonials
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faq" className="font-medium text-base">
+                  <Link to="/faq" className="text-base font-medium">
                     FAQ
                   </Link>
                 </li>
@@ -52,32 +52,32 @@ export default function Footer() {
             <div className="flex space-x-4">
 
               <Link
-                href="https://instagram.com"
+                to="https://instagram.com"
                 className="text-[#000000] "
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="w-5 h-5" />
               </Link>
               <Link
-                href="https://facebook.com"
+                to="https://facebook.com"
                 className="text-[#000000] "
                 aria-label="Follow us on Facebook"
               >
-                <Facebook className="h-5 w-5" fill="text-[#000000]" />
+                <Facebook className="w-5 h-5" fill="text-[#000000]" />
               </Link>
               <Link
-                href="https://twitter.com"
+                to="https://twitter.com"
                 className="text-[#000000] "
                 aria-label="Follow us on Twitter"
               >
-                <Twitter className="h-5 w-5" fill="text-[#000000]"/>
+                <Twitter className="w-5 h-5" fill="text-[#000000]"/>
               </Link>
               <Link
-                href="https://linkedin.com"
+                to="https://linkedin.com"
                 className="text-[#000000] "
                 aria-label="Follow us on LinkedIn"
               >
-                <Linkedin className="h-5 w-5" fill="text-[#000000]" />
+                <Linkedin className="w-5 h-5" fill="text-[#000000]" />
               </Link>
             </div>
 

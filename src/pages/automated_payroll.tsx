@@ -6,7 +6,7 @@ const PayrollSection: React.FC = () => {
     <div className="container flex flex-col items-center justify-between py-12 bg-gray-100 md:flex-row px-gutter">
       {/* Left Section */}
       <div className="flex-1 max-w-4xl mb-8 md:mb-0 md:pr-8">
-        <h2 className="text-4xl font-bold leading-tight text-black md:text-5xl">
+        <h2 className="text-4xl font-bold leading-tight text-black ">
           Automated Payroll – Pay on time, every time.
         </h2>
         <p className="mt-4 text-lg text-[#2D2F31] ">

@@ -38,14 +38,14 @@ export const CreditCardIcon = () => {
   );
 };
 
-interface IWavy{
-  classStyles ?: string;
+interface IWavy {
+  classStyles?: string;
 }
-export const WavyLines:React.FC<IWavy> = ({classStyles}) => {
+export const WavyLines: React.FC<IWavy> = ({ classStyles }) => {
   return (
     <svg
-      width="528"
-      height="133"
+      width="100%"
+      height="100%"
       viewBox="0 0 528 133"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
