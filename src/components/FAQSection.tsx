@@ -26,7 +26,7 @@ const FAQSection = () => {
 
   return (
     <section className="px-6 py-16 text-white bg-black">
-      <div className="relative grid max-w-6xl grid-cols-1 gap-16 mx-auto md:grid-cols-2">
+      <div className="container relative grid grid-cols-1 gap-16 md:grid-cols-2">
         {/* Left Column: Introduction */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left justify-center md:relative md:top-[-40px] md:w-3/4 lg:w-4/5">
           <h2 className="text-4xl font-bold text-white">Common Questions</h2>

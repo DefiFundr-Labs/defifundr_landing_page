@@ -23,8 +23,8 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <div className="max-w-7xl mx-auto px-12 py-[7rem]">
-      <div className="text-center mb-16">
+    <div className="container px-12 py-[7rem]">
+      <div className="mb-16 text-center">
         <h2 className="text-sm uppercase tracking-wider text-[#373737]">WHY CHOOSE US</h2>
         <h1 className="text-[23px] font-bold mt-4 xs:text-[40px]">
           Reliable, secure, and automated<br />
@@ -32,9 +32,9 @@ const WhyChooseUs = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {features.map((feature, index) => (
-          <div key={index} className="cursor-pointer hover:scale-105 transition duration-300">
+          <div key={index} className="transition duration-300 cursor-pointer hover:scale-105">
             <FeatureCard {...feature} />
           </div>
         ))}

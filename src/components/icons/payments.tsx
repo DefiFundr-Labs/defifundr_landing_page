@@ -41,6 +41,7 @@ export const CreditCardIcon = () => {
 interface IWavy {
   classStyles?: string;
 }
+// eslint-disable-next-line react/prop-types
 export const WavyLines: React.FC<IWavy> = ({ classStyles }) => {
   return (
     <svg
