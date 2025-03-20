@@ -3,7 +3,7 @@ function RealTimeNotifications() {
     <div className="container py-[60px] flex flex-col lg:flex-row justify-between items-center gap-y-[48px]">
       <div>
         <div className="lg:max-w-[589px] mb-6 lg:mb-8">
-          <h3 className="mb-3 lg:mb-4 font-bold text-black text-[35px] leading-[42px] lg:text-[44px] lg:leading-[53px]">
+          <h3 className="mb-3 text-4xl font-bold text-black lg:mb-4">
             Stay updated with Real-Time Notifications
           </h3>
           <p className="text-sm lg:text-lg font-regular text-[#2D2F31]">

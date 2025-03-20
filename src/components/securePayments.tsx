@@ -16,7 +16,7 @@ const SecurePayments = () => {
         />
       </div>
       <div className="flex-1 max-w-4xl p-5 ">
-        <h1 className="font-[HK Grotesk] font-bold text-4xl leading-tight lg:leading-[45.8px] tracking-[-4%] text-center lg:text-left inview-once opacity-0 [--slidein-delay:300ms] inview:animate-slidein">
+        <h1 className="font-[HK Grotesk] font-bold text-4xl  text-center lg:text-left inview-once opacity-0 [--slidein-delay:300ms] inview:animate-slidein">
           Enjoy Secure Payments with <br className="hidden lg:block" /> Smart
           Contracts
         </h1>

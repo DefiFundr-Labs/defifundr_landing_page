@@ -2,8 +2,8 @@ import cta_bg_image from "../../assets/images/cta_bg.png";
 
 function Cta() {
   return (
-    <section className="py-15 md:py-20 bg-[#121212] md:bg-[#ffffff]">
-      <div className="container flex flex-col items-center justify-center gap-6 px-6 md:px-15 lg:px-32">
+    <section className="container py-15 md:py-20 bg-[#121212] md:bg-[#ffffff]">
+      <div className="flex flex-col items-center justify-center gap-6 ">
         <div
           style={{ backgroundImage: `url(${cta_bg_image})` }}
           className="bg-[#000000] w-full rounded-[2rem] py-32 flex flex-col justify-center items-center gap-8 text-white bg-cover bg-center bg-no-repeat relative overflow-hidden   px-4"
