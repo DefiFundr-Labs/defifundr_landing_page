@@ -4,8 +4,18 @@ import {
   rotateVariant,
   sectionVariant,
   textVariant,
-} from "../animations/payments";
-import { CreditCardIcon, SettingsIcon, WavyLines } from "./icons/payments";
+} from "../../utils/animations/payments";
+import {
+  BusdLogo,
+  EthLogo,
+  EuroLogo,
+  UsdcLogo,
+} from "../../assets/svg/general";
+import {
+  CreditCardIcon,
+  SettingsIcon,
+  WavyLines,
+} from "../../assets/svg/general";
 import { motion } from "framer-motion";
 
 export const MultiPaymentOptions = () => {
@@ -54,7 +64,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/eth.svg" alt="eth" className="" />
+            <EthLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -64,7 +74,8 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/euro.svg" alt="euro" className="" />
+            {/* <img src="/img/euro.svg" alt="euro" className="" /> */}
+            <EuroLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -74,7 +85,8 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/busd.svg" alt="busd" className="" />
+            {/* <img src="/img/busd.svg" alt="busd" className="" /> */}
+            <BusdLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -84,7 +96,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/usdc.svg" alt="usdc" className="" />
+            <UsdcLogo />
           </motion.div>
         </div>
         <div className="relative w-full">
@@ -97,7 +109,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/busd.svg" alt="busd" className="scale-70" />
+            <BusdLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -117,7 +129,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/eth.svg" alt="eth" className="" />
+            <EthLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -138,6 +150,7 @@ export const MultiPaymentOptions = () => {
             whileHover="hover"
           >
             <img src="/img/busd.svg" alt="busd" className="" />
+            <BusdLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -147,7 +160,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/usdc.svg" alt="usdc" className="" />
+            <UsdcLogo />
           </motion.div>
         </div>
         <div className="relative w-full">
@@ -180,7 +193,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/eth.svg" alt="eth" className="" />
+            <EthLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -190,7 +203,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/euro.svg" alt="euro" className="" />
+            <EuroLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -200,7 +213,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/busd.svg" alt="busd" className="" />
+            <BusdLogo />
           </motion.div>
           <motion.div
             className="w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] rounded-[2.675rem] 
@@ -210,7 +223,7 @@ export const MultiPaymentOptions = () => {
             animate="animate"
             whileHover="hover"
           >
-            <img src="/img/usdc.svg" alt="usdc" className="" />
+            <UsdcLogo />
           </motion.div>
         </div>
       </motion.div>

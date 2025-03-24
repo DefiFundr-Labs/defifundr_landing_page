@@ -1,3 +1,6 @@
+import realTimeNotificationsImage from "../../assets/images/Virtual Cards_2.png";
+import { MailNotificationIcon, StarsIcon } from "../../assets/svg/general";
+
 function RealTimeNotifications() {
   return (
     <div className="container py-[60px] flex flex-col lg:flex-row justify-between items-center gap-y-[48px]">
@@ -15,7 +18,7 @@ function RealTimeNotifications() {
         <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-[31px] text-[#2D2F31]">
           <div className="lg:max-w-[262px]">
             <div className="border-[0.57px] border-[#E8D0EF] rounded-lg p-[8.5px] mb-[10px] lg:mb-3 w-fit">
-              <img src="/mailNotificationIcon.svg" alt="" />
+              <MailNotificationIcon />
             </div>
             <h4 className="font-bold text-base leading-5 lg:text-xl lg:leading-6 mb-[2px] lg:mb-[9px]">
               Instant Payroll Alerts
@@ -27,7 +30,7 @@ function RealTimeNotifications() {
           </div>
           <div className="lg:max-w-[262px]">
             <div className="border-[0.57px] border-[#E8D0EF] rounded-lg p-[8.5px] mb-[10px] lg:mb-3 w-fit">
-              <img src="/starsIcon.svg" alt="" />
+              <StarsIcon />
             </div>
             <h4 className="font-bold text-base leading-5 lg:text-xl lg:leading-6 mb-[2px] lg:mb-[9px]">
               Compliance & Invoice
@@ -40,7 +43,7 @@ function RealTimeNotifications() {
         </div>
       </div>
       <img
-        src="/NotificationsBanner.svg"
+        src={realTimeNotificationsImage}
         className="object-contain aspect-square"
         alt=""
       />
