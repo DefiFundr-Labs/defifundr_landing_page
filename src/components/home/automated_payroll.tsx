@@ -1,22 +1,24 @@
 import React from "react";
 import IconText from "./IconText";
 import { AutoTaxIcon, CalenderIcon } from "../../assets/svg/general";
-import virtualCard from "../../assets/images/Virtual Cards.png";
+import virtualCard from "../../assets/images/Virtual Cards .webp";
 
 const PayrollSection: React.FC = () => {
   return (
-    <div className="container flex flex-col items-center justify-between py-12 bg-gray-100 md:flex-row">
+    <div className="container flex flex-col items-center justify-between py-15 md:py-32 bg-[#F6F6F6] xl:flex-row gap-12 md:gap-25">
       {/* Left Section */}
-      <div className="max-w-[36rem]">
-        <h2 className="text-4xl font-bold leading-tight text-black ">
-          Automated Payroll – Pay on time, every time.
-        </h2>
-        <p className="mt-4 text-lg text-[#2D2F31] ">
-          Eliminate manual payroll calculations and delays. Our platform
-          automates salary disbursements based on predefined schedules, ensuring
-          employees get paid accurately and on time—every time.
-        </p>
-        <div className="flex flex-col mt-8 md:flex-row md:space-x-12">
+      <div className="space-y-8 ">
+        <div className="space-y-4">
+          <h2 className="text-black h2 inview-once opacity-0 [--slidein-delay:200ms] inview:animate-slidein">
+            Automated Payroll – Pay on time, every time.
+          </h2>
+          <p className="mt-4 text-lg text-neutralColor-1000  inview-once opacity-0 [--slidein-delay:200ms] inview:animate-slidein">
+            Eliminate manual payroll calculations and delays. Our platform
+            automates salary disbursements based on predefined schedules,
+            ensuring employees get paid accurately and on time—every time.
+          </p>
+        </div>
+        <div className="flex flex-col gap-6 mt-10 sm:flex-row lg:gap-32 ">
           <IconText
             img={<CalenderIcon />}
             title="Scheduled Payments"

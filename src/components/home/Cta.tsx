@@ -1,4 +1,5 @@
 import cta_bg_image from "../../assets/images/cta_bg.png";
+import Button from "../common/Button";
 
 function Cta() {
   return (
@@ -21,9 +22,7 @@ function Cta() {
             </p>
           </div>
           <div className="relative z-30">
-            <button className="bg-[#5A42DE] px-4 text-white font-bold py-2.5 rounded-lg text-[0.78rem]">
-              Join the waitlist
-            </button>
+            <Button text="Join the waitlist" variant="button--tertiary" />
           </div>
         </div>
       </div>
