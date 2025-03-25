@@ -1,6 +1,6 @@
 import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
-import DefiFundr_Logo from "../assets/DefiFundr_Logo.svg";
+import { DefiFundrLogo } from "../../assets/svg/general";
 
 export default function Footer() {
   return (
@@ -8,11 +8,7 @@ export default function Footer() {
       <div className="container flex flex-col ">
         <div className="flex items-center justify-between mt-5 mb-10 max-md:flex-col">
           <Link to="" className="flex items-center space-x-2">
-            <img
-              src={DefiFundr_Logo}
-              alt="DefiFundr Logo"
-              className="h-[24px] w-[14px]"
-            />
+            <DefiFundrLogo />
           </Link>
         </div>
 

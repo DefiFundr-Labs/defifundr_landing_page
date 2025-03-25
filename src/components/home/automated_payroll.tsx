@@ -1,11 +1,13 @@
 import React from "react";
-import IconText from "../common/IconText";
+import IconText from "./IconText";
+import { AutoTaxIcon, CalenderIcon } from "../../assets/svg/general";
+import virtualCard from "../../assets/images/Virtual Cards.png";
 
 const PayrollSection: React.FC = () => {
   return (
-    <div className="container flex flex-col items-center justify-between py-12 bg-gray-100 md:flex-row px-gutter">
+    <div className="container flex flex-col items-center justify-between py-12 bg-gray-100 md:flex-row">
       {/* Left Section */}
-      <div className="flex-1 max-w-4xl mb-8 md:mb-0 md:pr-8">
+      <div className="max-w-[36rem]">
         <h2 className="text-4xl font-bold leading-tight text-black ">
           Automated Payroll – Pay on time, every time.
         </h2>
@@ -16,14 +18,12 @@ const PayrollSection: React.FC = () => {
         </p>
         <div className="flex flex-col mt-8 md:flex-row md:space-x-12">
           <IconText
-            imgSrc="calender.svg"
-            altText="Scheduled Payments"
+            img={<CalenderIcon />}
             title="Scheduled Payments"
             description="Set up recurring payroll cycles and let the system handle disbursements automatically."
           />
           <IconText
-            imgSrc="recurring.svg"
-            altText="Auto-Tax Deductions"
+            img={<AutoTaxIcon />} // altText="Auto-Tax Deductions"
             title="Auto-Tax Deductions"
             description="Automatically calculate and deduct taxes, ensuring compliance with local regulations."
           />
@@ -33,9 +33,9 @@ const PayrollSection: React.FC = () => {
       {/* Right Section */}
       <div className="mt-8 md:mt-0 md:flex-shrink-0 md:pl-8">
         <img
-          src="payment_overview.svg"
+          src={virtualCard}
           alt="Payment Overview"
-          className="w-full h-auto aspect-square"
+          className="max-h-[30.3rem]"
         />
       </div>
     </div>
