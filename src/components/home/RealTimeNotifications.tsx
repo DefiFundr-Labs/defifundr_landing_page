@@ -1,45 +1,32 @@
-import realTimeNotificationsImage from "../../assets/images/Virtual Cards_2.png";
+import realTimeNotificationsImage from "../../assets/images/Virtual Cards_2.webp";
 import { MailNotificationIcon, StarsIcon } from "../../assets/svg/general";
+import IconText from "./IconText";
 
 function RealTimeNotifications() {
   return (
-    <div className="container py-[60px] flex flex-col lg:flex-row justify-between items-center gap-y-[48px]">
-      <div>
-        <div className="lg:max-w-[589px] mb-6 lg:mb-8">
-          <h3 className="mb-3 text-4xl font-bold text-black lg:mb-4">
+    <div className="container flex flex-col items-center justify-between py-15 xl:flex-row gap-y-12 md:gap-25">
+      <div className="">
+        <div className="mb-6 space-y-3 lg:mb-8 md:space-y-4">
+          <h2 className="text-black  h2 inview-once opacity-0 [--slidein-delay:200ms] inview:animate-slidein">
             Stay updated with Real-Time Notifications
-          </h3>
-          <p className="text-sm lg:text-lg font-regular text-[#2D2F31]">
+          </h2>
+          <p className="text-sm lg:text-lg font-regular text-[#626466] inview-once opacity-0 [--slidein-delay:200ms] inview:animate-slidein">
             Never miss a payroll deadline or invoice approval. Get instant
             notifications for salary payouts, invoice approvals, and compliance
             alerts to keep your operations running smoothly.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-[31px] text-[#2D2F31]">
-          <div className="lg:max-w-[262px]">
-            <div className="border-[0.57px] border-[#E8D0EF] rounded-lg p-[8.5px] mb-[10px] lg:mb-3 w-fit">
-              <MailNotificationIcon />
-            </div>
-            <h4 className="font-bold text-base leading-5 lg:text-xl lg:leading-6 mb-[2px] lg:mb-[9px]">
-              Instant Payroll Alerts
-            </h4>
-            <p className="text-[13px] leading-[21px] lg:text-base lg:leading-[26px]">
-              Receive real-time updates when salaries are processed, ensuring
-              employees get paid on time.
-            </p>
-          </div>
-          <div className="lg:max-w-[262px]">
-            <div className="border-[0.57px] border-[#E8D0EF] rounded-lg p-[8.5px] mb-[10px] lg:mb-3 w-fit">
-              <StarsIcon />
-            </div>
-            <h4 className="font-bold text-base leading-5 lg:text-xl lg:leading-6 mb-[2px] lg:mb-[9px]">
-              Compliance & Invoice
-            </h4>
-            <p className="text-[13px] leading-[21px] lg:text-base lg:leading-[26px]">
-              Stay on top of tax filings and invoice approvals with automated
-              alerts to avoid delays.
-            </p>
-          </div>
+        <div className="flex flex-col sm:flex-row  text-[#2D2F31] gap-6  md:gap-32">
+          <IconText
+            title="Instant Payroll Alerts"
+            description="Receive real-time updates when salaries are processed, ensuring employees get paid on time."
+            img={<MailNotificationIcon />}
+          />
+          <IconText
+            title="Compliance & Invoice"
+            description="Stay on top of tax filings and invoice approvals with automated alerts to avoid delays."
+            img={<StarsIcon />}
+          />
         </div>
       </div>
       <img

@@ -4,3 +4,9 @@ export interface FeatureCardProps {
   backgroundImage: string;
   imageClassName?: string;
 }
+export interface ButtonProps {
+  children?: React.ReactNode;
+  text: string;
+  variant: string;
+  onClick?: () => void;
+}
