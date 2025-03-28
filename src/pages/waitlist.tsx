@@ -26,7 +26,7 @@ export default function WaitlistPage() {
         {/* Crypto bracelet image */}
         <div className="mb-8 w-full max-w-[400px] mx-auto">
           <img
-            src="/images/crypto-bracelet.png"
+            src="/src/assets/images/crypto-bracelet.png"
             alt="Cryptocurrency Bracelet"
             className="w-full h-auto"
             loading="eager"
