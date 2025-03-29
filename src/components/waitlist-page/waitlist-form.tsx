@@ -40,7 +40,9 @@ export default function WaitlistForm() {
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500));
+      console.log(data);
     } catch (error) {
+      console.log(error);
       setError("root", {
         type: "server",
         message:
@@ -163,7 +165,7 @@ export default function WaitlistForm() {
 
       {isSubmitSuccessful && !errors.root && (
         <div className="mt-4 border rounded-md p-3 text-center animate-fade-in bg-[#10B981]/20 border-[#10B981]/50 text-white">
-          Thank you for joining our waitlist! We'll be in touch soon.
+          Thank you for joining our waitlist! We&lsquo;ll be in touch soon.
         </div>
       )}
     </div>
