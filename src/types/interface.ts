@@ -10,3 +10,7 @@ export interface ButtonProps {
   variant: string;
   onClick?: () => void;
 }
+export interface WaitListFormProps {
+  firstName: string;
+  email: string;
+}
