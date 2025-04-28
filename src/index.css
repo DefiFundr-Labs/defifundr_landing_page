@@ -1,84 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* this is for an animation dont remove it  */
+.circle-grandient {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  /* filter: drop-shadow(9px); */
+  filter: blur(21.3px);
+  background: linear-gradient(45deg, transparent 0%, #b42e0d 100%);
+  opacity: 0.43;
+  animation: gradientAnimation 50s ease-in-out infinite;
+}
+/* this is for an animation dont remove it  */
 
+@keyframes gradientAnimation {
+  0% {
+    transform: translate(80vw, -20%); /* Top-right */
+  }
+  25% {
+    transform: translate(80vw, 100%); /* Bottom-right */
+  }
+  50% {
+    transform: translate(-90%, 100%); /* Bottom-left */
+  }
+  75% {
+    transform: translate(-10%, -70%); /* Top-left */
+  }
+  100% {
+    transform: translate(80vw, -70%); /* Back to Top-right */
+  }
+}
 .container {
-	@apply mx-auto px-gutter !max-w-none 4xl:px-contained;
+  @apply mx-auto px-gutter !max-w-none 4xl:px-contained;
 }
 
 body {
-	font-family: "Hanken Grotesk", serif;
+  font-family: "Hanken Grotesk", serif;
 }
-@layer base {
-	body {
-		@apply text-black font-openrunde;
-	}
-}
+
 @layer utilities {
-	.h1 {
-		@apply text-3xl font-bold sm:text-5xl;
-	}
+  .hero {
+    @apply text-4xl sm:text-4xl md:text-6xl leading-[42px] font-bold  tracking-[-4%] md:leading-[64px] text-black;
+  }
+  .h1 {
+    @apply text-3xl font-bold sm:text-5xl;
+  }
 
-	.h2 {
-		@apply text-2xl font-black sm:text-3xl md:text-5xl;
-	}
-	.h3 {
-		@apply text-xl sm:text-3xl font-semibold tracking-[-2%];
-	}
-	.h4 {
-		@apply text-xl sm:text-xl font-semibold tracking-[-2%];
-	}
+  .h2 {
+    @apply text-3xl font-bold sm:text-5xl md:text-5xl;
+  }
 
-	.button {
-		@apply inline-flex w-full sm:w-fit rounded-full gap-2 font-medium items-center whitespace-nowrap justify-center px-3.5 py-2 sm:px-6 text-sm tracking-[-2%] xs:text-sm text-center transition cursor-pointer;
-	}
+  .h3 {
+    @apply text-xl sm:text-3xl font-semibold tracking-[-2%];
+  }
 
-	.button--primary {
-		@apply text-white bg-primary-500 border border-primary-500 
-               hover:bg-primary-600 hover:border-primary-600 
-               focus:bg-primary-500 focus:border-primary-500;
-	}
+  .h4 {
+    @apply text-xl sm:text-xl font-semibold tracking-[-2%];
+  }
 
-	.button--secondary {
-		@apply text-white bg-[#181D36] border border-[#181D36] min-h-9
-               hover:bg-[hsl(230,38%,20%)] focus:bg-[#181D36];
-	}
+  .button--primary {
+    @apply inline-flex items-center justify-center  gap-2 py-[0.70125rem] px-[1.339rem] font-semibold text-sm text-center text-white transition bg-black rounded-lg cursor-pointer sm:w-fit whitespace-nowrap;
+  }
+  .button--secondary {
+    @apply inline-flex items-center justify-center  gap-2 py-[0.70125rem] px-[1.339rem] font-semibold text-sm text-center text-black transition bg-white rounded-lg cursor-pointer sm:w-fit whitespace-nowrap;
+  }
+  .button--tertiary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-center text-white transition cursor-pointer sm:w-fit whitespace-nowrap bg-primary rounded-2xl;
+  }
 
-	.button--tertiary {
-		@apply bg-white border border-gray-300 
-               hover:bg-gray-50 focus:bg-white disabled:bg-white 
-               py-[11px] min-w-[12.5rem] px-[18px] disabled:border-gray-200;
-	}
+  /* .input {
+    @apply px-3.5 py-2.5 rounded-lg bg-white outline-none focus:border-primary-200;
+  } */
 
-	.button--tertiary-gray {
-		@apply text-gray-600 bg-gray-100 border border-gray-200
-               hover:bg-gray-200 focus:bg-gray-100;
-	}
+  .tag {
+    @apply flex w-fit rounded-full  py-2 px-3.5  gap-2 border font-medium text-sm;
+  }
 
-	.button--tertiary-white {
-		@apply text-primary-600 text-sm tracking-[-2%] rounded-full
-               hover:text-primary-700 hover:bg-primary-50 
-               focus:text-primary-600 disabled:text-gray-300;
-	}
+  .tag-primary {
+    @apply border-purple-100 tag bg-primary-100 text-primary-600;
+  }
 
-	.input {
-		@apply px-3.5 py-2.5 rounded-lg bg-white outline-none focus:border-primary-200;
-	}
+  .tag-secondary {
+    @apply text-purple-600 bg-purple-100 border-purple-300 tag;
+  }
 
-	.tag {
-		@apply flex w-fit rounded-full  py-2 px-3.5  gap-2 border font-medium text-sm;
-	}
-	.tag-primary {
-		@apply tag border-purple-100 bg-primary-100 text-primary-600;
-	}
-	.tag-secondary {
-		@apply tag text-purple-600 bg-purple-100 border-purple-300;
-	}
-	.tag-tertiary {
-		@apply tag text-purple-500 bg-purple-50 border-purple-50;
-	}
-	.tag-tertiary-white {
-		@apply tag text-purple-500 bg-white border-white;
-	}
+  .tag-tertiary {
+    @apply text-purple-500 tag bg-purple-50 border-purple-50;
+  }
+
+  .tag-tertiary-white {
+    @apply text-purple-500 bg-white border-white tag;
+  }
 }

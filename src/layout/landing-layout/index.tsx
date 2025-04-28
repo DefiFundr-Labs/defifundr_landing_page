@@ -1,10 +1,6 @@
 import { Outlet } from "react-router";
-import Navbar from "../common/Navbar";
-import Footer from "../common/Footer";
-// import Navbar from "../../common/Navbar";
-// import signup from "../../assets/images/signup.png";
-// import signin from "../../assets/images/signin.png";
-
+import Navbar from "../../components/common/Navbar";
+import Footer from "../../components/common/Footer";
 
 interface GuestLayoutProps {
   children?: React.ReactNode;
