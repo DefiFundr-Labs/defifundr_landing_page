@@ -11,7 +11,7 @@ export default function Footer() {
             <DefiFundrLogo />
             <p className="font-semibold text-[18px] ">DefiFundr</p>
           </Link>
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <ul className="flex flex-col sm:flex-row items-center gap-6 [&_li]:font-medium [&_li]:">
               <li className="hover:underline underline-offset-4 ">
                 <Link to="">Features</Link>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <Link to="">FAQ</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col items-center justify-between w-full gap-8 sm:flex-row ">
@@ -63,7 +63,7 @@ export default function Footer() {
               className="text-[#000000] group"
               aria-label="Follow us on LinkedIn"
             >
-              <Linkedin className="w-5 h-5  group-hover:text-primary" />
+              <Linkedin className="w-5 h-5 group-hover:text-primary" />
             </Link>
           </div>
         </div>

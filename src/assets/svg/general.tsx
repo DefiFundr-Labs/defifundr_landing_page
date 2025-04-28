@@ -11,11 +11,11 @@ export const DefiFundrLogo = () => {
     >
       <path
         d="M0 0.589172H7.66343L14.7485 7.09586L7.66343 6.95126V13.3134L0 7.09586V0.589172Z"
-        fill="#1A1A1A"
+        fill="currentColor"
       />
       <path
         d="M0 13.3134H7.66343L14.7485 19.8201L7.66343 19.6755V26.0376L0 19.8201V13.3134Z"
-        fill="#1A1A1A"
+        fill="currentColor"
       />
     </svg>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import cta_bg_image from "../../assets/images/cta_bg.png";
 import Button from "../common/Button";
 
@@ -22,7 +23,9 @@ function Cta() {
             </p>
           </div>
           <div className="relative z-30">
-            <Button text="Join the waitlist" variant="button--tertiary" />
+            <Link className="button--tertiary" to="/waitlist">
+              Join the Waitlist
+            </Link>
           </div>
         </div>
       </div>
