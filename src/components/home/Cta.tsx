@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import cta_bg_image from "../../assets/images/cta_bg.png";
-import Button from "../common/Button";
 
 function Cta() {
   return (
