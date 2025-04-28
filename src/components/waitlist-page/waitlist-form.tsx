@@ -11,10 +11,13 @@ import { ArrowRight, Mail } from "lucide-react";
 import { waitlistSchema } from "../../utils/validation";
 import { useWaitList } from "../../hooks/useWaitlist";
 import { toast } from "react-toastify";
+import { useEffect } from "react";
+
 type FormData = z.infer<typeof waitlistSchema>;
 
 export default function WaitlistForm() {
-  const { isPending, mutate } = useWaitList();
+  const { isPending, error, joinWaitlist } = useWaitList();
+
   const {
     register,
     handleSubmit,
@@ -25,33 +28,41 @@ export default function WaitlistForm() {
   } = useForm<FormData>({
     resolver: zodResolver(waitlistSchema),
     defaultValues: {
-      firstName: "",
+      full_name: "",
       email: "",
     },
     mode: "onSubmit",
   });
 
+  // Handle external errors from the hook
+  useEffect(() => {
+    if (error) {
+      setError("root", {
+        type: "server",
+        message: error.message || "Something went wrong. Please try again.",
+      });
+    }
+  }, [error, setError]);
+
   const onSubmit: SubmitHandler<FormData> = async (data) => {
-    mutate(data, {
-      onSuccess: () => {
-        toast("Thank you for joining our waitlist! We’ll be in touch soon.", {
-          className:
-            "mt-4 border rounded-md p-3 text-center animate-fade-in absolute  border-[#10B981]/50 text-white bg-gradient-to-br from-[#1E0B40] via-[#2D1259] to-[#1A1040] backdrop-md",
-          pauseOnHover: true,
-          pauseOnFocusLoss: true,
-          hideProgressBar: true,
-        });
-        reset();
-        clearErrors();
-      },
-      onError: (error) => {
-        console.log("api error", error);
-        setError("root", {
-          type: "server",
-          message: error.message || "Something went wrong. Please try again.",
-        });
-      },
-    });
+    try {
+      clearErrors();
+
+      await joinWaitlist(data);
+
+      toast("Thank you for joining our waitlist! We'll be in touch soon.", {
+        className:
+          "mt-4 border rounded-md p-3 text-center animate-fade-in absolute border-[#10B981]/50 text-white bg-gradient-to-br from-[#1E0B40] via-[#2D1259] to-[#1A1040] backdrop-md",
+        pauseOnHover: true,
+        pauseOnFocusLoss: true,
+        hideProgressBar: true,
+      });
+
+      reset();
+    } catch (error) {
+      console.error("Waitlist submission error:", error);
+      // Error is already handled via the useEffect
+    }
   };
 
   const onError: SubmitErrorHandler<FormData> = (errors) => {
@@ -59,30 +70,31 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div className="backdrop-blur-sm rounded-md p-4 md:p-2 bg-[#1E0B40]/50 ">
+    <div className="backdrop-blur-sm rounded-md p-4 md:p-2 bg-[#1E0B40]/50">
       <form
         onSubmit={handleSubmit(onSubmit, onError)}
         className="flex flex-col items-stretch gap-2 md:flex-row"
+        noValidate
       >
-        <div className="relative flex-1 ">
+        <div className="relative flex-1">
           <input
             type="text"
-            id="firstName"
-            placeholder="First Name"
-            aria-label="First Name"
-            aria-invalid={!!errors.firstName}
+            id="full_name"
+            placeholder="Full Name"
+            aria-label="Full Name"
+            aria-invalid={!!errors.full_name}
             autoComplete="off"
             className={`w-full h-full rounded-md px-4 py-3 transition-all bg-white/10 focus:bg-white/10 border ${
-              errors.firstName ? "border-[#F87171]" : "border-white/20"
+              errors.full_name ? "border-[#F87171]" : "border-white/20"
             } text-white`}
-            {...register("firstName")}
+            {...register("full_name")}
           />
-          {errors.firstName && (
+          {errors.full_name && (
             <p
               className="absolute -bottom-5 left-0 text-xs text-[#F87171]"
               role="alert"
             >
-              {errors.firstName.message}
+              {errors.full_name.message}
             </p>
           )}
         </div>
@@ -115,10 +127,11 @@ export default function WaitlistForm() {
 
         <button
           type="submit"
-          disabled={isSubmitting}
+          disabled={isSubmitting || isPending}
           className={`font-medium px-6 py-3 rounded-md flex items-center justify-center transition-all whitespace-nowrap bg-white text-[#1E0B40] ${
-            isPending ? "opacity-70 cursor-not-allowed" : ""
+            isPending || isSubmitting ? "opacity-70 cursor-not-allowed" : ""
           }`}
+          aria-busy={isPending}
         >
           {isPending ? (
             <span className="flex items-center">
@@ -127,6 +140,7 @@ export default function WaitlistForm() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <circle
                   className="opacity-25"
@@ -153,7 +167,10 @@ export default function WaitlistForm() {
       </form>
 
       {errors.root && (
-        <div className="mt-4 border rounded-md p-3 text-center animate-fade-in bg-[#EF4444]/20 border-[#EF4444]/50 text-white">
+        <div
+          className="mt-4 border rounded-md p-3 text-center animate-fade-in bg-[#EF4444]/20 border-[#EF4444]/50 text-white"
+          role="alert"
+        >
           {errors.root.message}
         </div>
       )}
